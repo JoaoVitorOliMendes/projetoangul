@@ -1,0 +1,13 @@
+<p>The Server {{ servername }} is {{ status }} Ez</p>
+<input class="input" (input)="upservername($event)" [disabled]="!status">
+<button class="btn" [disabled]="!status" (click)="lightswitch()">Button Booststrap</button>
+<br>
+<input class="input" (input)="upusername($event)" [(ngModel)]="username">
+<p>The Username is {{ username }}</p>
+<button class="btn" [disabled]="vazio" (click)="delete()">Delete</button>
+<br>
+<br>
+<br>
+<button class="btn btn-primary" (click)="ontoggle()">Toggle Display</button>
+<p *ngIf="showsecret">Secret password = tuna</p>
+<div *ngFor="let logitem of log; let i = index" [ngStyle]="{backgroundColor: i >= 4 ? 'blue' : 'transparent'}" [ngClass]="{'white-text': i >= 4}">{{ logitem+" click" }}</div>
