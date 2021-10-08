@@ -1,0 +1,33 @@
+{
+  "cartoes": [
+    {
+      "nome": "Joao Vitor",
+      "numero": "2727 2727 2727 2727",
+      "validade": "01/29",
+      "codigo": "272",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "nome": "Marina",
+      "numero": "1313 1313 1313 1313",
+      "validade": "08/29",
+      "codigo": "888"
+    },
+    {
+      "nome": "Michelle",
+      "numero": "9999 9999 9999 9999",
+      "validade": "03/29",
+      "codigo": "999",
+      "id": 5
+    }
+  ],
+  "user": [
+      {
+          "nome": "Joao Vitor",
+          "endereco": "Bairro Feliz",
+          "dataNascimento": "10/11/2003",
+          "telefone": "90000-0000"
+      }
+  ]
+}
