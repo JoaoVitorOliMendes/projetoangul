@@ -1,4 +1,32 @@
-<mat-drawer-container class="example-container">
-    <mat-drawer mode="side" opened>Drawer content</mat-drawer>
-    <mat-drawer-content>Main content</mat-drawer-content>
-</mat-drawer-container>  
+<mat-sidenav-container>
+
+    <mat-sidenav
+    #drawer
+    mode="side"
+    opened
+    class="sidenav"
+    fixedInViewport="true"
+    fixedTopGap="64"
+    fixedBottomGap="128">
+
+    <mat-nav-list>
+        <a mat-list-item routerLink="">
+            <i class="material-icons">home</i>
+            Home
+        </a>
+        <a mat-list-item routerLink="/register">
+            <i class="material-icons">person</i>
+            Cadastrar
+        </a>
+     </mat-nav-list>
+
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <div class="btn btn-primary" (click)="drawer.toggle()">
+            Toggle
+        </div>
+        <ng-content></ng-content>
+    <mat-sidenav-content>
+
+<mat-sidenav-container>  
